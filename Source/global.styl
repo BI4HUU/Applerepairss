@@ -1,8 +1,48 @@
 html
-	height 100%
 	font-size 22px
+	letter-spacing: 1px
+
 body
-	min-width: 576px
+	min-width 470px
 	padding 0
 	margin 0
-	height 100%
+	overflow-x: hidden
+	position relative
+	font-family "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
+
+.container
+	box-sizing: border-box
+	width: 100%
+	padding-right: 15px
+	padding-left: 15px
+	margin-right: auto
+	margin-left: auto
+	@media screen and (min-width: 576px)
+		width: 90%
+	@media screen and (min-width: 768px)
+		width: 80%
+	@media screen and (min-width: 992px)
+		max-width: 960px
+	@media screen and (min-width: 1200px)
+		max-width: 1140px
+
+.container-fluid
+	width: 100%
+	box-sizing: border-box
+	padding-right: 15px
+	padding-left: 15px
+
+.row
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	margin-right: -15px
+	margin-left: -15px
+
+.justify-content-between
+	display flex
+	justify-content space-between
+
+.text-center
+	text-align center

@@ -1,5 +1,5 @@
 header
-	.container.justify-content-between
+	.header.container
 		.logo Applerepairss
 		nav
 			.nav_item Сервисный центр
@@ -9,20 +9,57 @@ header
 section.section-hero.container-fluid
 	.blackout
 		.container
-			h1 Выездной ремонт техники Apple
-			h3 Починим ваш аппарат за 19 минут у вас на глазах<br> и дадим гарантию 189 дней
+			h1.text-center Выездной ремонт<br>техники Apple
+			h3.text-center Починим ваш аппарат за 19 минут у вас на глазах<br> и дадим гарантию 189 дней
 			.btn Заказать
+//- section.container
+//- 	h2.text-center Прайс на ремонт
+//- 	.dropdown-toggle
+//- 		.dropdown-menu
+//- 			.dropdown-item
+//- 			.dropdown-item
+//- 			.dropdown-item
+//- 			.dropdown-item
+//- 			.dropdown-item
+
 section.container
-	h2.text-center Узнать стоимость ремонта
-	p.text-center Выберите модель, чтобы ознакомиться с ценами.
-	.row
-		.col-6.col-sm-4.col-md-3.a
-		.col-6.col-sm-4.col-md-3.a
-		.col-6.col-sm-4.col-md-3.a
-		.col-6.col-sm-4.col-md-3.a
-		.col-6.col-sm-4.col-md-3.a
-		.col-6.col-sm-4.col-md-3.a
+	h2.text-center Почему мы?
+	.cart_wrap
+		.cart
+			h4.text-center Мобильность
+			p.text-center Не нужно ехать к нам, мы приедем к Вам!
+		.cart
+			h4.text-center Профессионализм
+			p.text-center В нашей компании работают только профессионалы своего дела с многолетним опытом.
+		.cart
+			h4.text-center Гарантия
+			p.text-center Мы используем оригинальные запчасти Apple и даем гарантию на нашу работу и запчасти 189 дней.
 
 
+section.container
+	h2.text-center Выездной ремонт техники Apple
+	.input_wrap
+		.input_wrap_item
+			input(placeholder="Имя").value_input.input_name1
+		.input_wrap_item
+			input(placeholder="Номер").value_input.input_number1
+		.btn.send1(onclick="send1()") Заказать
 
+section.popout.blackout
+	.popout_window
+		input(placeholder="Имя").value_input.input_name1
+		br
+		input(placeholder="Номер").value_input.input_number1
+		br
+		.connect_me_wrap(onclick="connect = 'Позвонить'; togle(this)")
+			.check
+			.connect_me Позвонить
+		.connect_me_wrap(onclick="connect = 'Viber'; togle(this)")
+			.check
+			.connect_me Написать у Viber
+		.connect_me_wrap(onclick="connect = 'WhatsApp'; togle(this)")
+			.check
+			.connect_me Написать у WhatsApp
+		.btn.send2(onclick="send2()") Заказать
 
+script(src="script.js")
