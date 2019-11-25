@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-html
+html(lang="RU")
 	head
 		title APPLEREPAIRSS
-		meta(charset="UTF-8")
+		meta(charset="UTF-8") 
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		meta(name="description" content="Выездной ремонт техники Apple")
 		//- link(href='bootstrap.css' rel='stylesheet' type='text/css')
-		link(href='style.css' rel='stylesheet' type='text/css')
+		//- link(href='style.css' rel='stylesheet' type='text/css')
 		style
 			//- include ../Build/bootstrap.min.css
-			//- include ../Build/style.css
+			include ../Build/style.css
 	body
 		include header
+		include footer
+
+		script
+			include ../Build/siema.min.js
+			include ../Build/script.js
+		script(src=" http://127.0.0.1:35729/livereload.js?ext=Firefox&extver=0.0.46 ")
 		//- include body
 
+		//- script(src="siema.min.js")
+		//- script(src="script.js")
 	//- script(defer src="audio.js")
 	//- script(defer src="code.js")
 	//- script(defer src="script.js")
@@ -23,5 +32,3 @@ html
 	//- 	include ../Build/code.js
 	//- script
 	//- 	include ../Build/script.js
-
-	script(src=" http://127.0.0.1:35729/livereload.js?ext=Firefox&extver=0.0.46 ")

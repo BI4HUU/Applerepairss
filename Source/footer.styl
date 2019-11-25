@@ -1,0 +1,89 @@
+footer
+	background #333333
+	color #eeeeee
+	margin-top 30px
+	padding-top 30px
+	padding-bottom 30px
+	input.value_input
+		border-color: #fff
+	.input_wrap
+		display flex
+		flex-direction: column
+		text-align: center
+		.btn
+			margin: auto
+			background-color: rgba(100,100,100,0.5);
+	.tel
+		font-size 24px
+
+.footer
+	@media screen and (max-width: 850px)
+		flex-direction: column
+	@media screen and (min-width: 850px)
+		justify-content space-between
+
+.footer_form
+	max-width: 222px
+
+.footer_form, .footer_nav, .footer_contacts
+	@media screen and (max-width: 850px)
+		margin: auto
+
+.footer_contacts
+	@media screen and (max-width: 850px)
+		margin-top 40px
+		margin-bottom:  20px
+
+.footer_logo
+	text-transform uppercase
+	font-size 24px
+	margin-top 0
+	margin-bottom: 20px
+
+.footer_nav
+	order: initial
+	a
+		display block
+		padding 5px 0
+
+.soc_icon_wrap
+	display flex
+
+.soc_icon
+	position relative
+	height 30px
+	width 30px
+	padding 7px
+
+.soc_icon1, .soc_icon2
+	position: absolute
+	top 0
+	left 0
+
+.soc_icon1 svg
+	fill #ccc
+
+.soc_icon2
+	display none
+
+.soc_icon:hover .soc_icon2
+	display block
+.soc_icon:hover .soc_icon1
+	display none
+
+.soc_icon svg
+	height 30px
+	width 30px
+
+
+.footer_nav
+	margin 0
+	@media screen and (max-width: 850px)
+		margin auto
+		order 1
+.footer_contacts
+	@media screen and (max-width: 850px)
+		order 2
+.footer_form
+	@media screen and (max-width: 850px)
+		order 3

@@ -1,51 +1,178 @@
-header
+
+
+header.blackout_header
 	.header.container
-		.logo Applerepairss
+		a(href="index.php").logo Applerepairss
 		nav
-			.nav_item Сервисный центр
-			.nav_item О нас
-			.nav_item Контакты
-		a.tel(href="tel:+") 097 123 45 67
-section.section-hero.container-fluid
+			a(href="index.php").nav_item Сервисный центр
+			a(href="about.php").nav_item О нас
+			a(href="contacts.php").nav_item Контакты
+		a.tel(href="tel:+79168586386") +7(916)858-63-86
+
+
+
+section.section-hero.container-fluid.page1(style="margin-bottom: -35px;")
+	.video-bg
+		video(autoplay="autoplay" muted="muted" loop="loop" poster="img/apple_prezent.jpeg" preload="metadata")
+			source(src="https://preterit-strikes.000webhostapp.com/img/prezent2.mp4" type="video/mp4")
 	.blackout
 		.container
 			h1.text-center Выездной ремонт<br>техники Apple
 			h3.text-center Починим ваш аппарат за 19 минут у вас на глазах<br> и дадим гарантию 189 дней
 			.btn(onclick="popout_see()") Заказать
-//- section.container
-//- 	h2.text-center Прайс на ремонт
-//- 	.dropdown-toggle
-//- 		.dropdown-menu
-//- 			.dropdown-item
-//- 			.dropdown-item
-//- 			.dropdown-item
-//- 			.dropdown-item
-//- 			.dropdown-item
-
-section.container
-	h2.text-center Почему мы?
-	.cart_wrap
-		.cart
-			h4.text-center Мобильность
-			p.text-center Не нужно ехать к нам, мы приедем к Вам!
-		.cart
-			h4.text-center Профессионализм
-			p.text-center В нашей компании работают только профессионалы своего дела с многолетним опытом.
-		.cart
-			h4.text-center Гарантия
-			p.text-center Мы используем оригинальные запчасти Apple и даем гарантию на нашу работу и запчасти 189 дней.
 
 
-section.container
-	h2.text-center Выездной ремонт техники Apple
-	.input_wrap
-		.input_wrap_item
-			input(placeholder="Имя").value_input.input_name1
-		.input_wrap_item
-			input(placeholder="Номер").value_input.input_number1
-		.btn.send1(onclick="send1()") Заказать
-	.consent Нажимая на кнопку, вы даете согласие на обработку 
-		a(href="") персональных данных
+section.bg_white
+	.container.priceList
+		h2.text-center Прайс на ремонт
+		h3.text-center iPhone
+		.apple_carts_wrap
+			a(href="iPhone11ProMax.php").apple_carts
+				img(src="img/iPhone11ProMax.jpg", alt="iphone11_pro").apple_carts_img
+				.apple_carts_name 11 Pro Max
+			a(href="iPhone11Pro.php").apple_carts
+				img(src="img/iPhone11Pro.jpg", alt="iphone11_pro").apple_carts_img
+				.apple_carts_name 11 Pro
+			a(href="iPhone11.php").apple_carts
+				img(src="img/iPhone11.jpg", alt="iphone11_pro").apple_carts_img
+				.apple_carts_name 11
+			a(href="iPhoneXsMax.php").apple_carts
+				img(src="img/iPhoneXs.jpg", alt="iphone11_pro").apple_carts_img
+				.apple_carts_name Xs Max
+			a(href="iPhoneXs.php").apple_carts
+				img(src="img/iPhoneXs.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name Xs
+			a(href="iPhoneXr.php").apple_carts
+				img(src="img/iPhoneXr.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name Xr
+			a(href="iPhoneX.php").apple_carts
+				img(src="img/iPhoneX.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name X
+			a(href="iPhone8Plus.php").apple_carts
+				img(src="img/iPhone8Plus.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name 8 Plus
+			a(href="iPhone8.php").apple_carts
+				img(src="img/iPhone8.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name 8
+			a(href="iPhone7Plus.php").apple_carts
+				img(src="img/iPhone7Plus.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name 7 Plus
+			a(href="iPhone7.php").apple_carts
+				img(src="img/iPhone7.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name 7
+			a(href="iPhone6SPlus.php").apple_carts
+				img(src="img/iPhone6SPlus.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name 6S Plus
+			a(href="iPhone6S.php").apple_carts
+				img(src="img/iPhone6S.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name 6S
+			a(href="iPhone6Plus.php").apple_carts
+				img(src="img/iPhone6.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name 6 Plus
+			a(href="iPhone6.php").apple_carts
+				img(src="img/iPhone6.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name 6
+			a(href="iPhoneSE.php").apple_carts
+				img(src="img/iPhoneSE.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name SE
+			a(href="iPhone5S.php").apple_carts
+				img(src="img/iPhoneSE.jpg", alt="iphone").apple_carts_img
+				.apple_carts_name 5S
+			.apple_carts
+			.apple_carts
+			.apple_carts
+			.apple_carts
+		h3.text-center iPad
+		.apple_carts_wrap
+			a(href="iPadPro12_9.php").apple_carts
+				img(src="img/iPadPro12_9.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name Pro 12.9
+			a(href="iPadPro11.php").apple_carts
+				img(src="img/iPadPro11.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name Pro 11.0
+			a(href="iPadPro10_5.php").apple_carts
+				img(src="img/iPadPro10_5.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name Pro 10.5
+			a(href="iPadPro9_7.php").apple_carts
+				img(src="img/iPadPro9_7.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name Pro 9.7
+			a(href="iPadAir2.php").apple_carts
+				img(src="img/iPadAir2.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name Air 2
+			a(href="iPadAir.php").apple_carts
+				img(src="img/iPadAir.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name Air
+			a(href="iPad.php").apple_carts
+				img(src="img/iPad.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name iPad
+			a(href="iPadMini.php").apple_carts
+				img(src="img/iPadMini.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name Mini
+			a(href="iPad6.php").apple_carts
+				img(src="img/iPad6.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name 6
+			a(href="iPad5.php").apple_carts
+				img(src="img/iPad5.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name 5
+			a(href="iPadMini4.php").apple_carts
+				img(src="img/iPadMini4.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name Mini 4
+			a(href="iPadMini3.php").apple_carts
+				img(src="img/iPadMini3.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name Mini 3
+			a(href="iPadMini2.php").apple_carts
+				img(src="img/iPadMini2.jpg", alt="ipad_pro").apple_carts_img
+				.apple_carts_name Mini 2
+			.apple_carts
+			.apple_carts
+			.apple_carts
+			.apple_carts
+		h3.text-center Watch
+		.apple_carts_wrap
+			a(href="WatchEdition38.php").apple_carts
+				img(src="img/WatchEdition38.jpg", alt="WatchSeries5").apple_carts_img
+				.apple_carts_name Watch Edition 38mm
+			a(href="WatchSport.php").apple_carts
+				img(src="img/WatchSport.jpg", alt="WatchSeries5").apple_carts_img
+				.apple_carts_name Watch Sport
+			a(href="Watch42.php").apple_carts
+				img(src="img/Watch42.jpg", alt="WatchSeries5").apple_carts_img
+				.apple_carts_name Watch 42mm
+			a(href="Watch38.php").apple_carts
+				img(src="img/Watch38.jpg", alt="WatchSeries5").apple_carts_img
+				.apple_carts_name Watch 38mm
+			.apple_carts
+			.apple_carts
+			.apple_carts
+			.apple_carts
+
+
+section.bg_eee
+	.container.page1
+		h2.text-center Почему мы?
+		.cart_wrap
+			.cart
+				h4.text-center Мобильность
+				p.text-center Не нужно ехать к нам, мы приедем к Вам!
+			.cart
+				h4.text-center Профессионализм
+				p.text-center В нашей компании работают только профессионалы своего дела с многолетним опытом.
+			.cart
+				h4.text-center Гарантия
+				p.text-center Мы используем оригинальные запчасти Apple и даем гарантию на нашу работу и запчасти 189 дней.
+
+
+section.bg_eee(style="padding: 20px 0;margin: -35px 0;")
+	.container.page1
+		h2.text-center Выездной ремонт техники Apple
+		.input_wrap
+			.input_wrap_item
+				input(placeholder="Имя").value_input.input_name1
+			.input_wrap_item
+				input(placeholder="Номер").value_input.input_number1
+			.btn.send1(onclick="send1()") Заказать
+		.consent Нажимая на кнопку, вы даете 
+			a(href="consent.php") согласие на обработку персональных данных.
 
 section.popout.blackout(onclick="popout_close()" style="display: none;")
 	.popout_window(onclick="popout_see()")
@@ -69,41 +196,52 @@ section.popout.blackout(onclick="popout_close()" style="display: none;")
 				.border
 			.connect_me Написать в WhatsApp
 		.btn.send2(onclick="send2()") Заказать
-		.consent Нажимая на кнопку, вы даете согласие на обработку 
-			a(href="") персональных данных
+		.consent Нажимая на кнопку, вы даете 
+			a(href="consent.php") согласие на обработку персональных данных.
 
 
-section.comments
-	h2.text-center Отзывы клиентов
-	.cart_wrap
-		.cart.comment
-			.cart_text Разбила экран на своем телефоне. Звонок и через 15 минут мастер уже ремонтировал мой телефон в ресторане. Лучший сервис и подход к своей работе.
-			.cart_bottom_wrap
-				.cart_bottom_img
-				.cart_bottom_name Яна Шишкова
-		.cart.comment
-			.cart_text Разбила экран на своем телефоне. Звонок и через 15 минут мастер уже ремонтировал мой телефон в ресторане. Лучший сервис и подход к своей работе.
-			.cart_bottom_wrap
-				.cart_bottom_img
-				.cart_bottom_name Яна Шишкова
-		.cart.comment
-			.cart_text Разбила экран на своем телефоне. Звонок и через 15 минут мастер уже ремонтировал мой телефон в ресторане. Лучший сервис и подход к своей работе.
-			.cart_bottom_wrap
-				.cart_bottom_img
-				.cart_bottom_name Яна Шишкова
+section.bg_eee
+	.container.comments.page1
+		h2.text-center Отзывы клиентов
+		.cart_wrap
+			.siema
+				div
+					.cart.comment
+						.cart_text Разбила экран на своем телефоне. Звонок и через 15 минут мастер уже ремонтировал мой телефон в ресторане. Лучший сервис и подход к своей работе.
+						.cart_bottom_wrap
+							.cart_bottom_img(style="background-image: url('img/avatar.jpg')")
+							.cart_bottom_name Яна Шишкова
+				div
+					.cart.comment
+						.cart_text Разбил экран на своем iPhone 7. Оставил заявку на сайте, договорились о встрече. Заменили дисплей за 10 минут. За ремонтом теперь только в Applerepairss.
+						.cart_bottom_wrap
+							.cart_bottom_img(style="background-image: url('img/avatar2.jpg')")
+							.cart_bottom_name Артем Алексеев
+				div
+					.cart.comment
+						.cart_text Разбился телефон в самый неподходящий момент. Времени ехать в сервис не было. Ребята из Applerepairss приехали оперативно и заменили дисплей прямо на месте. Большое спасибо за такой сервис.
+						.cart_bottom_wrap
+							.cart_bottom_img(style="background-image: url('img/avatar3.jpg')")
+							.cart_bottom_name Виктория Зайцева
 
-section.container
-	h2.text-center Остались вопросы?
-	.input_wrap
-		.input_wrap_item
-			input(placeholder="Имя").value_input.input_name1
-		.input_wrap_item
-			input(placeholder="Номер").value_input.input_number1
-		.btn.send1(onclick="send3()") Заказать
-	.consent Нажимая на кнопку, вы даете 
-		a(href="") согласие на обработку персональных данных
+section.bg_eee(style="padding: 20px 0;margin: -35px 0;")
+	.container.page1
+		h2.text-center Остались вопросы?
+		.input_wrap
+			.input_wrap_item
+				input(placeholder="Имя").value_input.input_name3
+			.input_wrap_item
+				input(placeholder="Номер").value_input.input_number3
+			.btn.send1(onclick="send3()") Заказать
+		.consent Нажимая на кнопку, вы даете 
+			a(href="consent.php") согласие на обработку персональных данных.
 
-section.container.contact_page
+
+section.container.page2(style="display: none;")
+	h2.text-center О нас
+	p &nbsp;&nbsp;&nbsp;&nbsp;Applerepairss— это сервисный центр по ремонту техники Apple. Мы работаем с 2014 года. Мы были одними из первых, кто осуществляет ремонт на выезде. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;На сегодняшний день мы являемся лидерами на рынке и популярности.
+
+section.container.contact_page.page3(style="display: none;")
 	h2.text-center Контакты
 	.cart_wrap
 		.cart
@@ -117,13 +255,7 @@ section.container.contact_page
 			p.text-center info@Applerepairss.ru
 
 
-section.container
+section.container.page4(style="display: none;")
 	h2.text-center Согласие на обработку персональных данных
 	p &nbsp;&nbsp;&nbsp;&nbsp;В соответствии с условиями Закона “О защите персональных данных”, заполнив форму, каждый участник дает свое согласие на сбор, обработку, использование и передачу третьим лицам его персональных данных,а также изображений, фото-, аудио- и видеоматериалов, записанных во время мероприятия, для маркетинговых целей организаторов и/или третьих лиц. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;В соответствии с требованиями Закона Украины “О защите персональных данных” (далее — Закон), подтверждаю свое согласие на обработку моих личных данных. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;Под обработкой моих персональных данных в соответствии с Законом “О защите персональных данных” подразумевается любое действие или совокупность действие, совершаемых полностью или частично в информационной автоматизированной системе и/или в картотеках персональных данных, которые связаны со сбором, регистрацией, накоплением, хранением, адаптированием, изменением, восстановлением, использованием и распространением, обезличиванием, уничтожением данных обо мне. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;Этим также подтверждаю и соглашаюсь с тем, что мне известно о внесении информации обо мне в базу персональных данных с целью обеспечения ее эффективной деятельности, о моих правах, определенных Законом, и о передаче моих данных кругу лиц, определенных Законом.
 
-
-section.container
-	h2.text-center О нас
-	p &nbsp;&nbsp;&nbsp;&nbsp;Applerepairss— это сервисный центр по ремонту техники Apple. Мы работаем с 2014 года. Мы были одними из первых, кто осуществляет ремонт на выезде. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;На сегодняшний день мы являемся лидерами на рынке и популярности.
-
-script(src="script.js")
