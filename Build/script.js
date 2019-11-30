@@ -95,50 +95,74 @@ function send6(){
 	xhr.send(data);
 }
 
-
-if (document.documentElement.clientWidth > 1000) {
-	new Siema({
-		selector: '.siema',
-		duration: 200,
-		easing: 'ease-out',
-		perPage: 3,
-		startIndex: 2,
-		draggable: true,
-		threshold: 20,
-		loop: true,
-	});
-} else {
-	new Siema({
-		selector: '.siema',
-		duration: 200,
-		easing: 'ease-out',
-		perPage: 1,
-		startIndex: 2,
-		draggable: true,
-		threshold: 20,
-		loop: true,
-	});
-
-var viewport = document.createElement("meta");
-viewport.setAttribute("name", "viewport");
-if (screen.width < 700) {
-	if (screen.width < 600) {
-		if (screen.width < 540) {
-			if (screen.width < 470) {
-				viewport.setAttribute("content", "width=470");
-			} else {
-				viewport.setAttribute("content", "width=540");
+$(document).ready(function(){
+	$(".owl-carousel").owlCarousel({
+		loop:true,
+		margin:10,
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1,
+				dots:true,
+				nav:false
+			},
+			900:{
+				items:2,
+				dots:true,
+				nav:false
+			},
+			1600:{
+				items:3,
+				nav:false,
+				dots:false,
+				loop:false
 			}
-		} else {
-			viewport.setAttribute("content", "width=600");
 		}
-	} else {
-		viewport.setAttribute("content", "width=700");
-	}
-} else {
-	viewport.setAttribute("content", "width=device-width, initial-scale=1");
-}
-document.head.appendChild(viewport);
+	});
+});
 
-}
+// if (document.documentElement.clientWidth > 1000) {
+// 	new Siema({
+// 		selector: '.siema',
+// 		duration: 200,
+// 		easing: 'ease-out',
+// 		perPage: 3,
+// 		startIndex: 2,
+// 		draggable: true,
+// 		threshold: 20,
+// 		loop: true,
+// 	});
+// } else {
+// 	new Siema({
+// 		selector: '.siema',
+// 		duration: 200,
+// 		easing: 'ease-out',
+// 		perPage: 1,
+// 		startIndex: 2,
+// 		draggable: true,
+// 		threshold: 20,
+// 		loop: true,
+// 	});
+// }
+
+// var viewport = document.createElement("meta");
+// viewport.setAttribute("name", "viewport");
+// if (screen.width < 700) {
+// 	if (screen.width < 600) {
+// 		if (screen.width < 540) {
+// 			if (screen.width < 470) {
+// 				viewport.setAttribute("content", "width=470");
+// 			} else {
+// 				viewport.setAttribute("content", "width=540");
+// 			}
+// 		} else {
+// 			viewport.setAttribute("content", "width=600");
+// 		}
+// 	} else {
+// 		viewport.setAttribute("content", "width=700");
+// 	}
+// } else {
+// 	viewport.setAttribute("content", "width=device-width, initial-scale=1");
+// }
+// document.head.appendChild(viewport);
 
