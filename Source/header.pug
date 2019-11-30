@@ -162,7 +162,7 @@ section.bg_eee
 				p.text-center Мы используем оригинальные запчасти Apple и даем гарантию на нашу работу и запчасти 189 дней.
 
 
-section.bg_eee(style="padding: 20px 0;margin: -35px 0;")
+section.bg_eee(style="padding: 40px 0;margin: -35px 0;")
 	.container.page1
 		h2.text-center Выездной ремонт техники Apple
 		.input_wrap
@@ -174,37 +174,37 @@ section.bg_eee(style="padding: 20px 0;margin: -35px 0;")
 		.consent Нажимая на кнопку, вы даете 
 			a(href="consent.php") согласие на обработку персональных данных.
 
-section.popout.blackout(onclick="popout_close()" style="display: none;")
-	.popout_window(onclick="popout_see()")
-		.popout_window_close(onclick="popout_close()") X
-		h4.text-center Выездной ремонт техники Apple
-		input(placeholder="Имя").value_input.input_name2
-		br
-		input(placeholder="Номер").value_input.input_number2
-		br
-		.connect_me_wrap(onclick="connect = 'Позвонить'; togle(this)")
-			.check(style='background-image: url("img/check.svg")'
-			)
-				.border
-			.connect_me Позвонить
-		.connect_me_wrap(onclick="connect = 'Viber'; togle(this)")
-			.check
-				.border
-			.connect_me Написать в Viber
-		.connect_me_wrap(onclick="connect = 'WhatsApp'; togle(this)")
-			.check
-				.border
-			.connect_me Написать в WhatsApp
-		.btn.send2(onclick="send2()") Заказать
-		.consent Нажимая на кнопку, вы даете 
-			a(href="consent.php") согласие на обработку персональных данных.
+//- section.popout.blackout(onclick="popout_close()" style="display: none;")
+//- 	.popout_window(onclick="popout_see()")
+//- 		.popout_window_close(onclick="popout_close()") X
+//- 		h4.text-center Выездной ремонт техники Apple
+//- 		input(placeholder="Имя").value_input.input_name2
+//- 		br
+//- 		input(placeholder="Номер").value_input.input_number2
+//- 		br
+//- 		.connect_me_wrap(onclick="connect = 'Позвонить'; togle(this)")
+//- 			.check(style='background-image: url("img/check.svg")'
+//- 			)
+//- 				.border
+//- 			.connect_me Позвонить
+//- 		.connect_me_wrap(onclick="connect = 'Viber'; togle(this)")
+//- 			.check
+//- 				.border
+//- 			.connect_me Написать в Viber
+//- 		.connect_me_wrap(onclick="connect = 'WhatsApp'; togle(this)")
+//- 			.check
+//- 				.border
+//- 			.connect_me Написать в WhatsApp
+//- 		.btn.send2(onclick="send2()") Заказать
+//- 		.consent Нажимая на кнопку, вы даете 
+//- 			a(href="consent.php") согласие на обработку персональных данных.
 
 
 section.bg_eee
 	.container.comments.page1
 		h2.text-center Отзывы клиентов
 		.cart_wrap
-			.siema
+			.owl-carousel.owl-theme
 				div
 					.cart.comment
 						.cart_text Разбила экран на своем телефоне. Звонок и через 15 минут мастер уже ремонтировал мой телефон в ресторане. Лучший сервис и подход к своей работе.
@@ -224,7 +224,7 @@ section.bg_eee
 							.cart_bottom_img(style="background-image: url('img/avatar3.jpg')")
 							.cart_bottom_name Виктория Зайцева
 
-section.bg_eee(style="padding: 20px 0;margin: -35px 0;")
+section.bg_eee(style="padding: 30px 0 80px 0;margin: -35px 0;")
 	.container.page1
 		h2.text-center Остались вопросы?
 		.input_wrap

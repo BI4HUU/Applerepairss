@@ -9,13 +9,18 @@ html(lang="RU")
 		//- link(href='style.css' rel='stylesheet' type='text/css')
 		style
 			//- include ../Build/bootstrap.min.css
+			include ../Build/owl.carousel.min.css
+			include ../Build/owl.theme.default.min.css
 			include ../Build/style.css
 	body
 		include header
 		include footer
 
 		script
-			include ../Build/siema.min.js
+			//- include ../Build/jquery.min.js
+			//- include ../Build/jquery2.min.js
+			include ../Build/jquery.slim.min.js
+			include ../Build/owl.carousel.min.js
 			include ../Build/script.js
 		script(src=" http://127.0.0.1:35729/livereload.js?ext=Firefox&extver=0.0.46 ")
 		//- include body
